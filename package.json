@@ -1,0 +1,12 @@
+{
+  "name": "kubrickTest",
+  "version": "1.0.0",
+  "description": "e-commerse website test",
+  "main": "index.js",
+  "repository": "https://github.com/steviebdesignstraining/KubrickTest",
+  "author": "Stephen Bennett",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^10.1.0"
+  }
+}
