@@ -1,31 +1,5 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
 Cypress.Commands.add('fillAccountForm', () => {
-   cy.wait(2000)
+   cy.wait(4000)
     cy.get('#id_gender1').click()
     cy.get('#customer_firstname').click().type('James')
     cy.get('#customer_lastname').click().type('Brown')
@@ -50,7 +24,7 @@ Cypress.Commands.add('fillAccountForm', () => {
  });
 
  Cypress.Commands.add('incorrectPassword1', () => {
-   cy.wait(2000)
+   cy.wait(4000)
    cy.get('#id_gender1').click()
    cy.get('#customer_firstname').click().type('James')
    cy.get('#customer_lastname').click().type('Brown')
@@ -76,7 +50,7 @@ Cypress.Commands.add('fillAccountForm', () => {
 });
 
 Cypress.Commands.add('incorrectAddress', () => {
-   cy.wait(2000)
+   cy.wait(4000)
    cy.get('#id_gender1').click()
    cy.get('#customer_firstname').click().type('James')
    cy.get('#customer_lastname').click().type('Brown')
